@@ -14,7 +14,7 @@ import java.nio.file.Paths;
 
 public class TestExecutorClass {
     private static final String FILE_PATH1 = "src/main/java/com/examples/input/Test1.java";
-    private static final String FILE_PATH2 = "src/main/java/com/examples/input/Test2.java";
+    private static final String FILE_PATH2 = "src/main/java/com/examples/input/Test2.java"; //For this one, no exception.
     public static void main(String[] args) throws Exception {
         TypeSolver typeSolver = new CombinedTypeSolver(
                 new ReflectionTypeSolver(),
