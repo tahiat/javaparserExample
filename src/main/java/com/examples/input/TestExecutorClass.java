@@ -13,7 +13,8 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class TestExecutorClass {
-    private static final String FILE_PATH = "src/main/java/com/examples/input/Test1.java";
+    private static final String FILE_PATH1 = "src/main/java/com/examples/input/Test1.java";
+    private static final String FILE_PATH2 = "src/main/java/com/examples/input/Test2.java";
     public static void main(String[] args) throws Exception {
         TypeSolver typeSolver = new CombinedTypeSolver(
                 new ReflectionTypeSolver(),
@@ -23,7 +24,7 @@ public class TestExecutorClass {
 
         StaticJavaParser.getParserConfiguration().setSymbolResolver(symbolSolver);
 
-        CompilationUnit cu = StaticJavaParser.parse(Files.newInputStream(Paths.get(FILE_PATH)));
+        CompilationUnit cu = StaticJavaParser.parse(Files.newInputStream(Paths.get(FILE_PATH1)));
 
         ExceptionVisitor visitor = new ExceptionVisitor();
 

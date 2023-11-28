@@ -7,7 +7,7 @@ import com.github.javaparser.ast.visitor.Visitable;
 public class ExceptionVisitor extends ModifierVisitor<Void> {
     @Override
     public Visitable visit(Parameter n, Void arg) {
-       // n.resolve();
+        n.resolve();
         return super.visit(n, arg);
     }
 }
