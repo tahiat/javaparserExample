@@ -1,6 +1,6 @@
 package com.examples.input;
-public class Foo {
-    void test() {
+public class Test1 {
+    void test(CustomException arg) {
         try{
             throw new CustomException("This is a custom Exception");
         } catch (CustomException e) {

@@ -13,7 +13,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class TestExecutorClass {
-    private static final String FILE_PATH = "src/main/java/com/examples/input/Foo.java";
+    private static final String FILE_PATH = "src/main/java/com/examples/input/Test1.java";
     public static void main(String[] args) throws Exception {
         TypeSolver typeSolver = new CombinedTypeSolver(
                 new ReflectionTypeSolver(),
